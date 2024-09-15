@@ -43,7 +43,7 @@ Here're some of the project's best features:
 
 # APP Link
 
-[Hotel Booking App](https://bookinghotel-app-alirzagz.netlify.app/)
+[Booking Hotel App](https://bookinghotel-app-alirzagz.netlify.app/)
 
 ---
 
