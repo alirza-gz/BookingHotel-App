@@ -7,15 +7,12 @@ import { useForm } from "react-hook-form";
 import TextFieldInput from "../TextFieldInput/TextFieldInput";
 
 function Login() {
-  // const [email, setEmail] = useState("user@gmail.com");
-  // const [password, setPassword] = useState("12345");
   const navigate = useNavigate();
   const { isAuthenticated, login } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
-    setValue,
   } = useForm(
     {
       mode: "all",
@@ -27,9 +24,6 @@ function Login() {
       },
     }
   );
-
-  setValue("email", "user@gmail.com");
-  setValue("password", "@Test1234");
 
   const loginHandler = (data) => {
     if (data.email && data.password) login(data.email, data.password);
